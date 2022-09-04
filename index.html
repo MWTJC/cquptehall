@@ -67,19 +67,33 @@
           <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                   aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-0 mt-lg-0" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
               <li class="nav-item"><a class="nav-link fw-medium active" aria-current="page" href="#">回到顶部</a></li>
               <li class="nav-item"><a class="nav-link" href="#mobile">手机访问</a></li>
               <li class="nav-item"><a class="nav-link" href="#q&a">疑难解答</a></li>
               <li class="nav-item"><a class="nav-link" href="#joinus">加入我们</a></li>
 
-              
+
             </ul>
-            </div>
+          </div>
         </div>
       </nav>
       <section class="py-0" id="home">
+
+
+        <!--div class="bg-holder d-block d-md-block" style="align-items: end" >
+
+          <canvas id="canvas3d"></canvas>
+          <script type="module">
+          import { Application } from './static/js/spline_runtime.js';
+          const canvas = document.getElementById('canvas3d');
+          const app = new Application(canvas);
+          app.load('./static/spline/scene.splinecode');
+          </script>
+        </div-->
+
+
         <div class="bg-holder d-none d-md-block" style="background-image:url(static/image/hero-section.png);background-position:right bottom;background-size:contain;"></div>
         <!--/.bg-holder-->
         <div class="bg-holder d-block d-md-none" style="background-image:url(static/image/hero-bg.png);background-position:right top;background-size:contain;"></div>
@@ -160,6 +174,15 @@
 
 
             <div class="row">
+
+              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                <a target="_blank" href="http://szyx.cqupt.edu.cn/xxdk">
+                  <img class="img-fluid mb-3" src="static/picture/xxdk.png" width="100" alt="...">
+                </a>
+                <h3 class="h5 mb-2 font-base">线上学习打卡</h3>
+                <h3 class="h6 text-reset">教务处线上学习打卡</h3>
+              </div>
+
               <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
                 <a target="_blank" href="http://szyx.cqupt.edu.cn/szyx2022/login.php">
                   <img class="img-fluid mb-3" src="static/picture/welcome2022.png" width="100" alt="...">
@@ -227,7 +250,7 @@
 
                 <img class="img-fluid mb-3" src="static/picture/xskjjs.jpg" width="100" alt="...">
 
-                <h3 class="h4 mb-2 font-base">学生科技竞赛</h3>
+                <h3 class="h5 mb-2 font-base">学生科技竞赛</h3>
                 <h3 class="h6 text-reset">(请在微信搜索"重邮学生科技竞赛公共管理平台"小程序)</h3>
               </div>
 
