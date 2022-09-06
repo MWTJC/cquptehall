@@ -31,6 +31,7 @@
   <!--    Stylesheets-->
   <!-- ===============================================-->
   <link href="static/css/theme.min.css" rel="stylesheet">
+  <link href="static/css/hero1.css" rel="stylesheet">
 
 
   <!-- ===============================================-->
@@ -74,42 +75,64 @@
               <li class="nav-item"><a class="nav-link" href="#q&a">疑难解答</a></li>
               <li class="nav-item"><a class="nav-link" href="#joinus">加入我们</a></li>
 
-
             </ul>
           </div>
         </div>
       </nav>
       <section class="py-0" id="home">
 
+        <!-- ===============================================-->
+        <!--   spline+hero-->
+        <!-- ===============================================-->
+        <div class="Hero_content__1V3uU">
+          <div class="container">
+            <div class="col-md-7 col-lg-6 py-1 text-sm-start text-start">
+              <h1 class="mt-1 mt-lg-7 mt-md-7 mb-sm-4 display-4 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-7">遇到问题？ <br
+                      class="d-block d-lg-none d-xl-block">右上角有疑难解答。</h1>
+              <p class="mt-11 mt-1 mt-lg-7 mt-md-7 mb-1 fs-1 text-reset text-end text-sm-start text-lg-start text-md-start">
+                富强、民主、文明、和谐 、自由、平等、公正、法治 、爱国、敬业、诚信、友善 </p>
+            </div>
+          </div>
+        </div>
 
-        <!--div class="bg-holder d-block d-md-block" style="align-items: end" >
-
-          <canvas id="canvas3d"></canvas>
+        <div class="d-none d-md-block">
+          <canvas id="BIGcanvas3d" height="500"></canvas>
           <script type="module">
-          import { Application } from './static/js/spline_runtime.js';
-          const canvas = document.getElementById('canvas3d');
-          const app = new Application(canvas);
-          app.load('./static/spline/scene.splinecode');
+            import {Application} from './static/spline/runtime.js';
+
+            const canvas = document.getElementById('BIGcanvas3d');
+            const app = new Application(canvas);
+            app.load('./static/spline/bigscene.splinecode');
           </script>
-        </div-->
+        </div>
 
+        <div class="d-block d-md-none">
+          <canvas id="SMALLcanvas3d" height="500"></canvas>
+          <script type="module">
+            import {Application} from './static/spline/runtime.js';
 
-        <div class="bg-holder d-none d-md-block" style="background-image:url(static/image/hero-section.png);background-position:right bottom;background-size:contain;"></div>
+            const canvas = document.getElementById('SMALLcanvas3d');
+            const app = new Application(canvas);
+            app.load('./static/spline/smallscene.splinecode');
+          </script>
+        </div>
+
+        <!--原始页面-->
+        <!--div class="bg-holder d-none d-md-block" style="background-image:url(static/image/hero-section.png);background-position:right bottom;background-size:contain;"></div-->
         <!--/.bg-holder-->
-        <div class="bg-holder d-block d-md-none" style="background-image:url(static/image/hero-bg.png);background-position:right top;background-size:contain;"></div>
+        <!--div class="bg-holder d-none d-md-block" style="background-image:url(static/image/hero-section.png);background-position:right bottom;background-size:contain;"></div-->
         <!--/.bg-holder-->
-        <div class="container">
+        <!--div class="container">
           <div class="row align-items-center min-vh-md-75">
             <div class="col-md-7 col-lg-6 py-6 text-sm-start text-center">
               <h1 class="mt-6 mb-sm-4 display-4 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-7">遇到问题？ <br
                       class="d-block d-lg-none d-xl-block">右上角有疑难解答。</h1>
               <p class="mb-4 fs-1">富强、民主、文明、和谐 、自由、平等、公正、法治 、爱国、敬业、诚信、友善 </p>
               <div class="pt-3">
-
               </div>
             </div>
           </div>
-        </div>
+        </div-->
       </section>
 
       <!-- ============================================-->
@@ -514,6 +537,7 @@
           </div>
         </div>
       </section>
+
       <section class="py-0">
         <div class="bg-holder" style="background-image:url(#;"></div>
         <!--/.bg-holder-->
