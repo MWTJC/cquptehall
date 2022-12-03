@@ -1,0 +1,1 @@
+企业微信图片素材位置：C:\Users\TJC\Documents\WXWork\1688856837260113\Cache\Image\
