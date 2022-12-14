@@ -190,7 +190,7 @@ class GenerateQRCode(object):
             return r, g, b
 
         max_score = 0
-        dominant_color = 0
+        dominant_color = 0, 0, 0
 
         # 取得主要颜色
         for count, (r, g, b, a) in b_map.getcolors(b_map.size[0] * b_map.size[1]):
@@ -207,14 +207,17 @@ class GenerateQRCode(object):
             if score > max_score:
                 max_score = score
                 dominant_color = (r, g, b)
+        print(dominant_color)
 
-        h, s, v = rgb2hsv(r, g, b)
-        if s <= 0.05:
+        # 此处添加通过s判断是否颜色过于深，如过深则整成灰色，防止被整成深红色
+        h, s, v = rgb2hsv(dominant_color[0], dominant_color[1], dominant_color[2])
+        if s <= 0.0001:
             s = 0
         else:
-            s = 1
-        v = 0.35
+            s = 1  # 饱和度拉满
+        v = 0.35  # 明度固定防止过暗过亮
         r, g, b = hsv2rgb(h, s, v)
+
         dark = (r, g, b, 255)
         white = (255, 255, 255, 255)
 
