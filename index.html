@@ -2,121 +2,124 @@
 <html lang="zh-CN" dir="ltr" xmlns="http://www.w3.org/1999/html" xmlns:top="http://www.w3.org/1999/xhtml">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--缓存控制，html内部无效，取决于gitee官方-->
+    <!--缓存控制，html内部无效，取决于gitee官方-->
 
-  <!--取消refer反制官网封禁，用no-referrer有效-->
-  <meta name="referrer" content="no-referrer"/>
+    <!--取消refer反制邮电跳转封禁，用no-referrer有效-->
+    <meta name="referrer" content="no-referrer"/>
 
-  <!-- ===============================================-->
-  <!--    Document Title-->
-  <!-- ===============================================-->
-  <title>掌上服务大厅精简版</title>
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>掌上服务大厅精简版</title>
 
-  <!-- ===============================================-->
-  <!--    Favicons-->
-  <!-- ===============================================-->
-  <link rel="apple-touch-icon" sizes="180x180" href="static/image/logo.png">
-  <link rel="icon" type="image/x-icon" sizes="32x32" href="static/image/favicon.ico">
-  <link rel="icon" type="image/x-icon" sizes="16x16" href="static/image/favicon.ico">
-  <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="static/image/favicon.ico">
-  <link rel="manifest" href="static/image/manifest.json">
-  <meta name="msapplication-TileImage" content="static/image/mstile-150x150.png">
-  <meta name="theme-color" content="#ffffff">
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/image/logo.png">
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="static/image/favicon.ico">
+    <link rel="icon" type="image/x-icon" sizes="16x16" href="static/image/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" sizes="16x16" href="static/image/favicon.ico">
+    <link rel="manifest" href="static/image/manifest.json">
+    <meta name="msapplication-TileImage" content="static/image/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
 
-  <!-- ===============================================-->
-  <!--    Stylesheets-->
-  <!-- ===============================================-->
-  <link href="static/css/theme.min.css" rel="stylesheet">
-  <link href="static/css/hero1.css" rel="stylesheet">
-
-
-  <!-- ===============================================-->
-  <!--    SAKANA!!!!-->
-  <!-- ===============================================-->
-  <style>
-    #sakana-widget-chisato {
-      position: fixed;
-      right: -20px;
-      bottom: 24px;
-      z-index: 999;
-    }
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="static/css/theme.min.css" rel="stylesheet">
+    <link href="static/css/hero1.css" rel="stylesheet">
+    <link href="static/css/sakana.min.css" rel="stylesheet">
 
 
-  </style>
-  <script defer="defer" src="static/js/index.1361b34f.min.js"></script>
+    <!-- ===============================================-->
+    <!--    SAKANA!!!!-->
+    <!-- ===============================================-->
+    <style>
+        #sakana-widget-chisato {
+            position: fixed;
+            right: -20px;
+            bottom: 24px;
+            z-index: 999;
+        }
+
+
+    </style>
+    <script defer="defer" src="static/js/sakana.min.js"></script>
 
 
 </head>
 
-  <body>
-    <!-- ===============================================-->
-    <!--    Main Content-->
-    <!-- ===============================================-->
-    <main class="main" id="top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3 backdrop"
-           data-navbar-on-scroll="data-navbar-on-scroll">
+<body>
+<!-- ===============================================-->
+<!--    Main Content-->
+<!-- ===============================================-->
+<main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3 backdrop"
+         data-navbar-on-scroll="data-navbar-on-scroll">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center fw-semi-bold fs-2" href="#"> <img class="me-3"
-                                                                                             width="25"
-                                                                                             src="static/picture/logo.png"
-                                                                                             alt="">
-            <div class="text-primary font-base">掌上大厅精简版</div>
-          </a>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-          <div class="collapse navbar-collapse border-top border-lg-0 mt-0 mt-lg-0" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
-              <li class="nav-item"><a class="nav-link fw-medium active" aria-current="page" href="#">回到顶部</a></li>
-              <li class="nav-item"><a class="nav-link" href="#mobile">手机访问</a></li>
-              <li class="nav-item"><a class="nav-link" href="#q&a">疑难解答</a></li>
-              <li class="nav-item"><a class="nav-link" href="#unsolvable">无解部分</a></li>
-              <li class="nav-item"><a class="nav-link" href="#joinus">加入我们</a></li>
+            <a class="navbar-brand d-flex align-items-center fw-semi-bold fs-2" href="#"> <img class="me-3"
+                                                                                               width="25"
+                                                                                               src="static/picture/logo.png"
+                                                                                               alt="">
+                <div class="text-primary font-base">掌上大厅精简版</div>
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse border-top border-lg-0 mt-0 mt-lg-0" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base">
+                    <li class="nav-item"><a class="nav-link fw-medium active" aria-current="page" href="#">回到顶部</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#mobile">手机访问</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#q&a">疑难解答</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#unsolvable">无解部分</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#joinus">加入我们</a></li>
 
-            </ul>
-          </div>
+                </ul>
+            </div>
         </div>
-      </nav>
-      <section class="py-0" id="home">
+    </nav>
+    <section class="py-0" id="home">
 
         <!-- ===============================================-->
         <!--   spline+hero-->
         <!-- ===============================================-->
         <div class="Hero_content__1V3uU">
-          <div class="container">
-            <div class="col-md-7 col-lg-6 py-1 text-sm-start text-start">
-              <h1 class="mt-1 mt-lg-7 mt-md-7 mb-sm-4 display-4 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-7">遇到问题？ <br
-                      class="d-block d-lg-none d-xl-block">右上角有疑难解答。</h1>
-              <p class="mt-11 mt-1 mt-lg-7 mt-md-7 mb-1 fs-1 text-reset text-end text-sm-start text-lg-start text-md-start">
-                富强、民主、文明、和谐 、自由、平等、公正、法治 、爱国、敬业、诚信、友善 </p>
+            <div class="container">
+                <div class="col-md-7 col-lg-6 py-1 text-sm-start text-start">
+                    <h1 class="mt-1 mt-lg-7 mt-md-7 mb-sm-4 display-4 fw-semi-bold lh-sm fs-4 fs-lg-6 fs-xxl-7">遇到问题？
+                        <br
+                                class="d-block d-lg-none d-xl-block">右上角有疑难解答。</h1>
+                    <p class="mt-11 mt-1 mt-lg-7 mt-md-7 mb-1 fs-1 text-reset text-end text-sm-start text-lg-start text-md-start">
+                        富强、民主、文明、和谐 、自由、平等、公正、法治 、爱国、敬业、诚信、友善 </p>
+                </div>
             </div>
-          </div>
         </div>
 
         <div class="d-none d-md-block">
-          <canvas id="BIGcanvas3d" height="500"></canvas>
-          <script type="module">
-            import {Application} from './static/spline/runtime.js';
+            <canvas id="BIGcanvas3d" height="500"></canvas>
+            <script type="module">
+                import {Application} from './static/spline/runtime.js';
 
-            const canvas = document.getElementById('BIGcanvas3d');
-            const app = new Application(canvas);
-            app.load('./static/spline/bigscene.splinecode');
-          </script>
+                const canvas = document.getElementById('BIGcanvas3d');
+                const app = new Application(canvas);
+                app.load('./static/spline/bigscene.splinecode');
+            </script>
         </div>
 
         <div class="d-block d-md-none">
-          <canvas id="SMALLcanvas3d" height="500"></canvas>
-          <script type="module">
-            import {Application} from './static/spline/runtime.js';
+            <canvas id="SMALLcanvas3d" height="500"></canvas>
+            <script type="module">
+                import {Application} from './static/spline/runtime.js';
 
-            const canvas = document.getElementById('SMALLcanvas3d');
-            const app = new Application(canvas);
-            app.load('./static/spline/smallscene.splinecode');
-          </script>
+                const canvas = document.getElementById('SMALLcanvas3d');
+                const app = new Application(canvas);
+                app.load('./static/spline/smallscene.splinecode');
+            </script>
         </div>
 
         <!--原始页面-->
@@ -135,552 +138,574 @@
             </div>
           </div>
         </div-->
-      </section>
+    </section>
 
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
-      <section>
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section>
 
 
         <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-auto mb-5 mb-md-7">
-              <h1 class="fw-semi-bold text-warning">功能 <span class="text-1100">列表</span></h1>
-            </div>
-          </div>
-
-          <div class="row justify-content-center">
-
-
-            <div class="row">
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-3 text">
-                <h4 class="fw-semi text-danger">疫情防控</h4>
-              </div>
+            <div class="row justify-content-center">
+                <div class="col-auto mb-5 mb-md-7">
+                    <h1 class="fw-semi-bold text-warning">功能 <span class="text-1100">列表</span></h1>
+                </div>
             </div>
 
+            <div class="row justify-content-center">
 
-            <div class="row">
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/cyxsjkdkmobile/*default/index.html"
-                >
-                  <img class="img-fluid center-block mb-3" src="static/picture/clockin.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">学生健康打卡</h3>
-              </div>
 
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/crxglxt/mobile/index.html">
-                  <img class="img-fluid mb-3" src="static/picture/goout.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">学生出入校</h3>
-              </div>
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-3 text">
+                        <h4 class="fw-semi text-danger">疫情防控</h4>
+                    </div>
+                </div>
 
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/cyhscj/mobile/index.html">
-                  <img class="img-fluid mb-3" src="static/picture/acid.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-2 font-base">核酸抽检</h3>
-                <h3 class="h6 text-reset">建议思考为何要用企业微信才能做核酸(2021-2022第二学期，学生需要企业微信扫码才能做核酸)</h3>
-              </div>
 
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://studata.cqupt.edu.cn/platform/index">
-                  <img class="img-fluid mb-3" src="static/picture/xstbfw.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-2 font-base">[新]学生位置填报</h3>
-                <h3 class="h6 text-reset"><kbd>微信</kbd>出现WhitelabelErrorPage:Unauthorized请登陆后重进</h3>
-                <h3 class="h6 text-reset">建议思考本来就有每日打卡为何还需要这个</h3>
-              </div>
+                <div class="row">
 
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
 
-                <img class="img-fluid mb-3" src="static/picture/epidemic@disabled.png" width="100" alt="...">
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/crxglxt/mobile/index.html">
+                            <img class="img-fluid mb-3" src="static/picture/goout.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">学生出入校</h3>
+                    </div>
 
-                <h3 class="h5 mb-4 font-base">疫情数据</h3>
-              </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 mb-4 mb-lg-4 text">
+                        <h4 class="fw-semi text-danger">智慧教务</h4>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://szyx.cqupt.edu.cn/xxdk">
+                            <img class="img-fluid mb-3" src="static/picture/xxdk.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-2 font-base">线上学习打卡</h3>
+                        <h3 class="h6 text-reset">教务处线上学习打卡</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://mobile.tc.cqupt.edu.cn/">
+                            <img class="img-fluid mb-3" src="static/picture/tc.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">一体化教学平台</h3>
+
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://szyx.cqupt.edu.cn/szyx2022/login.php">
+                            <img class="img-fluid mb-3" src="static/picture/welcome2022.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">2022迎新系统</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/kb@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">课表查询</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/ks@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">考试安排</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/kjs@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">空教室查询</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/xl@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">校历查询</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/oaxsjzcxmobile/index.html">
+                            <img class="img-fluid mb-3" src="static/picture/lecture.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">学术讲座查询</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/tsgzw@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">图书馆座位</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/ts@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">图书查询</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/jy@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">借阅信息</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/xskjjs.jpg" width="100" alt="...">
+
+                        <h3 class="h5 mb-2 font-base">学生科技竞赛</h3>
+                        <h3 class="h6 text-reset">请在微信搜索"重邮学生科技竞赛公共管理平台"小程序</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 mb-4 mb-lg-4 text">
+                        <h4 class="fw-semi text-danger">公共服务</h4>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://year.cqupt.edu.cn/MyYear">
+                            <img class="img-fluid mb-3" src="static/picture/myyear.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">我这一学年</h3>
+                    </div>
+
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/wecquptbk.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">信息资讯</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/cquptsmqd/mobile/index.html">
+                            <img class="img-fluid mb-3" src="static/picture/sxhqd.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-2 font-base">扫码签到</h3>
+                        <h3 class="h6 text-reset"><kbd>双选会</kbd></h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="https://mzhxg.cqupt.edu.cn/">
+                            <img class="img-fluid mb-3" src="static/picture/oa.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-2 font-base">智慧学工</h3>
+                        <h3 class="h6 text-reset"><kbd>内网或VPN</kbd></h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://202.202.43.198/mobile/index">
+                            <img class="img-fluid mb-3" src="static/picture/pe_old.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-2 font-base">智慧体育[旧]</h3>
+                        <h3 class="h6 text-reset"><kbd>内网或VPN</kbd></h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://172.20.2.228/portal">
+                            <img class="img-fluid mb-3" src="static/picture/pe_new.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-2 font-base">智慧体育[新]</h3>
+                        <h3 class="h6 text-reset"><kbd>内网或VPN</kbd></h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://ihome.cqupt.edu.cn/kiosk-mobile/shiro-cas">
+                            <img class="img-fluid mb-3" src="static/picture/dormi.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">学生公寓管理</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/wecqupt.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">We重邮</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="https://face.cqupt.edu.cn/">
+                            <img class="img-fluid mb-3" src="static/picture/face.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">人脸数据采集</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="https://gis.cqupt.edu.cn/cmipsh5/">
+                            <img class="img-fluid mb-3" src="static/picture/windowedcollege.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">可视化校园</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/swzl@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">失物招领</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/bx@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">物业报修</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="https://jzsf.cqupt.edu.cn/">
+                            <img class="img-fluid mb-3" src="static/picture/tax.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">集中收费</h3>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 mb-4 mb-lg-4 text">
+                        <h4 class="fw-semi text-danger">协作服务</h4>
+                    </div>
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://studata.cqupt.edu.cn/platform/index">
+                            <img class="img-fluid mb-3" src="static/picture/xtbg.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">协同办公</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/cyxyhy/mobile/index.html"
+                        >
+                            <img class="img-fluid mb-3" src="static/picture/dialbook.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">办公电话</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 mb-4 mb-lg-4 text">
+                        <h4 class="fw-semi text-danger">学习资源</h4>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-0 text-center">
+                        <a target="_blank" href="http://202.202.43.73:8000">
+                            <img class="img-fluid mb-4" src="static/picture/library.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">图书馆外网访问资源</h3>
+                        <!--p class="lh-lg">请勿对外泄露此地址，</p-->
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-0 text-center">
+                        <a target="_blank" href="http://olap.epsnet.com.cn">
+                            <img class="img-fluid mb-4" src="static/picture/ESP.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">ESP数据平台</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-0 text-center">
+                        <a target="_blank" href="https://www.chaoxing.com/">
+                            <img class="img-fluid mb-4" src="static/picture/chaoxing.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">超星发现</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-0 text-center">
+                        <a target="_blank" href="http://www.rdfybk.com/">
+                            <img class="img-fluid mb-4" src="static/picture/rdfybk.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">人大复印报刊资料</h3>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 mb-4 mb-lg-4 text">
+                        <h4 class="fw-semi text-danger">其他</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/sdf@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">电费查询</h3>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-lg-12 mb-4 mb-lg-4 text">
+                        <h4 class="fw-semi text-danger">已废弃(工作台里已消失)</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank"
+                           href="http://ehall.cqupt.edu.cn/publicapp/sys/cyxsjkdkmobile/*default/index.html"
+                        >
+                            <img class="img-fluid center-block mb-3" src="static/picture/clockin.png" width="100"
+                                 alt="...">
+                        </a>
+                        <h3 class="h5 mb-4 font-base">学生健康打卡</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/cyhscj/mobile/index.html">
+                            <img class="img-fluid mb-3" src="static/picture/acid.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-2 font-base">核酸抽检</h3>
+                        <h3 class="h6 text-reset">建议思考为何要用企业微信才能做核酸(2021-2022第二学期，学生需要企业微信扫码才能做核酸)</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+                        <a target="_blank" href="http://studata.cqupt.edu.cn/platform/index">
+                            <img class="img-fluid mb-3" src="static/picture/xstbfw.png" width="100" alt="...">
+                        </a>
+                        <h3 class="h5 mb-2 font-base">[新]学生位置填报</h3>
+                        <h3 class="h6 text-reset"><kbd>微信</kbd>出现WhitelabelErrorPage:Unauthorized请登陆后重进</h3>
+                        <h3 class="h6 text-reset">建议思考本来就有每日打卡为何还需要这个</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/epidemic@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">疫情数据</h3>
+                    </div>
+
+                    <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
+
+                        <img class="img-fluid mb-3" src="static/picture/fxxcb@disabled.png" width="100" alt="...">
+
+                        <h3 class="h5 mb-4 font-base">本科生每日打卡</h3>
+                    </div>
+                </div>
+
+
             </div>
-
-
-            <div class="row">
-              <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-3 text">
-                <h4 class="fw-semi text-danger">智慧教务</h4>
-              </div>
-            </div>
-
-
-            <div class="row">
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://szyx.cqupt.edu.cn/xxdk">
-                  <img class="img-fluid mb-3" src="static/picture/xxdk.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-2 font-base">线上学习打卡</h3>
-                <h3 class="h6 text-reset">教务处线上学习打卡</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://mobile.tc.cqupt.edu.cn/">
-                  <img class="img-fluid mb-3" src="static/picture/tc.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">一体化教学平台</h3>
-
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://szyx.cqupt.edu.cn/szyx2022/login.php">
-                  <img class="img-fluid mb-3" src="static/picture/welcome2022.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">2022迎新系统</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/kb@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">课表查询</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/ks@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">考试安排</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/kjs@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">空教室查询</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/xl@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">校历查询</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/oaxsjzcxmobile/index.html">
-                  <img class="img-fluid mb-3" src="static/picture/lecture.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">学术讲座查询</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/tsgzw@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">图书馆座位</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/ts@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">图书查询</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/jy@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">借阅信息</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/xskjjs.jpg" width="100" alt="...">
-
-                <h3 class="h5 mb-2 font-base">学生科技竞赛</h3>
-                <h3 class="h6 text-reset">请在微信搜索"重邮学生科技竞赛公共管理平台"小程序</h3>
-              </div>
-
-            </div>
-
-
-            <div class="row">
-              <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-3 text">
-                <h4 class="fw-semi text-danger">公共服务</h4>
-              </div>
-            </div>
-
-
-            <div class="row">
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://year.cqupt.edu.cn/MyYear">
-                  <img class="img-fluid mb-3" src="static/picture/myyear.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">我这一学年</h3>
-              </div>
-
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/wecquptbk.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">信息资讯</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/cquptsmqd/mobile/index.html">
-                  <img class="img-fluid mb-3" src="static/picture/sxhqd.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-2 font-base">扫码签到</h3>
-                <h3 class="h6 text-reset"><kbd>双选会</kbd></h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="https://mzhxg.cqupt.edu.cn/">
-                  <img class="img-fluid mb-3" src="static/picture/oa.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-2 font-base">智慧学工</h3>
-                <h3 class="h6 text-reset"><kbd>内网或VPN</kbd></h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://202.202.43.198/mobile/index">
-                  <img class="img-fluid mb-3" src="static/picture/pe_old.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-2 font-base">智慧体育[旧]</h3>
-                <h3 class="h6 text-reset"><kbd>内网或VPN</kbd></h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://172.20.2.228/portal">
-                  <img class="img-fluid mb-3" src="static/picture/pe_new.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-2 font-base">智慧体育[新]</h3>
-                <h3 class="h6 text-reset"><kbd>内网或VPN</kbd></h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://ihome.cqupt.edu.cn/kiosk-mobile/shiro-cas">
-                  <img class="img-fluid mb-3" src="static/picture/dormi.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">学生公寓管理</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/wecqupt.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">We重邮</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="https://face.cqupt.edu.cn/">
-                  <img class="img-fluid mb-3" src="static/picture/face.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">人脸数据采集</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="https://gis.cqupt.edu.cn/cmipsh5/">
-                  <img class="img-fluid mb-3" src="static/picture/windowedcollege.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">可视化校园</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/swzl@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">失物招领</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/bx@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">物业报修</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="https://jzsf.cqupt.edu.cn/">
-                  <img class="img-fluid mb-3" src="static/picture/tax.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">集中收费</h3>
-              </div>
-            </div>
-
-
-            <div class="row">
-              <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-3 text">
-                <h4 class="fw-semi text-danger">协作服务</h4>
-              </div>
-            </div>
-
-
-            <div class="row">
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://studata.cqupt.edu.cn/platform/index">
-                  <img class="img-fluid mb-3" src="static/picture/xtbg.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">协同办公</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-                <a target="_blank" href="http://ehall.cqupt.edu.cn/publicapp/sys/cyxyhy/mobile/index.html"
-                >
-                  <img class="img-fluid mb-3" src="static/picture/dialbook.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">办公电话</h3>
-              </div>
-
-            </div>
-
-
-            <div class="row">
-              <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-3 text">
-                <h4 class="fw-semi text-danger">学习资源</h4>
-              </div>
-            </div>
-
-
-            <div class="row">
-              <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-0 text-center">
-                <a target="_blank" href="http://202.202.43.73:8000">
-                  <img class="img-fluid mb-4" src="static/picture/library.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">图书馆外网访问资源</h3>
-                <!--p class="lh-lg">请勿对外泄露此地址，</p-->
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-0 text-center">
-                <a target="_blank" href="http://olap.epsnet.com.cn">
-                  <img class="img-fluid mb-4" src="static/picture/ESP.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">ESP数据平台</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-0 text-center">
-                <a target="_blank" href="https://www.chaoxing.com/">
-                  <img class="img-fluid mb-4" src="static/picture/chaoxing.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">超星发现</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-0 text-center">
-                <a target="_blank" href="http://www.rdfybk.com/">
-                  <img class="img-fluid mb-4" src="static/picture/rdfybk.png" width="100" alt="...">
-                </a>
-                <h3 class="h5 mb-4 font-base">人大复印报刊资料</h3>
-              </div>
-            </div>
-
-
-            <div class="row">
-              <div class="col-4 col-sm-4 col-lg-3 mb-4 mb-lg-3 text">
-                <h4 class="fw-semi text-danger">其他</h4>
-              </div>
-            </div>
-
-            <div class="row">
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/fxxcb@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">本科生每日打卡</h3>
-              </div>
-
-              <div class="col-4 col-sm-4 col-lg-3 mb-3 mb-lg-0 text-center">
-
-                <img class="img-fluid mb-3" src="static/picture/sdf@disabled.png" width="100" alt="...">
-
-                <h3 class="h5 mb-4 font-base">电费查询</h3>
-              </div>
-
-            </div>
-
-          </div>
         </div><!-- end of .container-->
-      </section><!-- <section> close ============================-->
-      <!-- ============================================-->
+    </section><!-- <section> close ============================-->
+    <!-- ============================================-->
 
-      <section id="mobile">
+    <section id="mobile">
         <div class="bg-holder"
              style="background-image:url(static/image/libraries-bg-new.png);background-position:left bottom;background-size:contain;"></div>
         <!--/.bg-holder-->
         <div class="container">
-          <div class="row g-xl-0 align-items-center">
-            <div class="col-md-5 col-lg-7 text-xl-center"><img class="img-fluid mb-5 mb-md-0"
-                                                               src="static/picture/mobileQR.png" width="620"
-                                                               alt=""></div>
-            <div class="col-md-7 col-lg-4 text-center text-md-start offset-lg-1 offset-xxl-0">
-              <h1 class="fw-semi-bold text-warning">微信 <span class="text-1100">访问</span></h1>
-              <p class="pt-3 lh-lg">使用一般微信扫码访问以避免功能不完整</p>
+            <div class="row g-xl-0 align-items-center">
+                <div class="col-md-5 col-lg-7 text-xl-center"><img class="img-fluid mb-5 mb-md-0"
+                                                                   src="static/picture/mobileQR.png" width="620"
+                                                                   alt=""></div>
+                <div class="col-md-7 col-lg-4 text-center text-md-start offset-lg-1 offset-xxl-0">
+                    <h1 class="fw-semi-bold text-warning">微信 <span class="text-1100">访问</span></h1>
+                    <p class="pt-3 lh-lg">使用一般微信扫码访问以避免功能不完整</p>
+                </div>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section id="q&a">
+    <section id="q&a">
         <div class="bg-holder"
              style="background-image:url(static/image/cta-bg.png);background-position:right bottom;background-size:contain;"></div>
         <!--/.bg-holder-->
         <div class="container">
-          <div class="row g-xl-0 align-items-center">
-            <div class="col-md-3 col-lg-2 text-center">
-              <a target="_blank" href="https://ids.cqupt.edu.cn/authserver/login">
-                <img class="img-fluid mb-5 mb-md-0" src="static/picture/login.png" width="150" alt="">
-              </a>
+            <div class="row g-xl-0 align-items-center">
+                <div class="col-md-3 col-lg-2 text-center">
+                    <a target="_blank" href="https://ids.cqupt.edu.cn/authserver/login">
+                        <img class="img-fluid mb-5 mb-md-0" src="static/picture/login.png" width="150" alt="">
+                    </a>
+                </div>
+                <div class="col-md-9 col-lg-9 text-center text-md-start offset-lg-1 offset-xxl-0">
+                    <h1 class="fw-semi-bold text-warning">疑难 <span class="text-1100">解答</span></h1>
+
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:浏览器核酸抽检不能扫码？</h5>
+                    <p class="pt-3 lh-lg text-justify">A:通过微信访问核酸抽检。</p>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">
+                        Q:<kbd>微信jsdk初始化失败</kbd>或者<kbd>暂无权限访问此服务</kbd>或者<kbd>请求错误
+                        401：用户没有权限</kbd></h5>
+                    <p class="pt-3 lh-lg text-justify">A:右上角刷新或者通过紫色钥匙登陆入口先登陆，无效请换浏览器。</p>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:<kbd>找不到此ids.cqupt.edu.cn页面</kbd>或者<kbd>HTTP
+                        ERROR
+                        404</kbd></h5>
+                    <p class="pt-3 lh-lg text-justify">
+                        A:用紫色钥匙登陆入口先登陆再使用，无效则换浏览器或使用二维码访问。（此种情况也可能是学校服务器鬼搞，请对比手机或者电脑企业微信现象以确定原因）</p>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:<kbd>禁止访问403</kbd></h5>
+                    <p class="pt-3 lh-lg text-justify">
+                        A:学校鬼搞不让进，可能是需要内网VPN或者其他原因，请对比手机或者电脑企业微信现象以确定原因。</p>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:紫色钥匙登陆入口不能用？</h5>
+                    <p class="pt-3 lh-lg text-justify">A:可能是学校服务器鬼搞。</p>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:不管用微信还是浏览器，都是一直卡着进不去或者卡在认证码登陆界面循环加载？</h5>
+                    <p class="pt-3 lh-lg text-justify">A:那大概率是学校服务器鬼搞，请对比手机或者电脑企业微信现象以确定原因。</p>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:微信内置浏览器白屏打不开？</h5>
+                    <p class="pt-3 lh-lg text-justify">A:长按功能图标通过二维码识别访问。</p>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:二维码识别访问也打不开？？</h5>
+                    <p class="pt-3 lh-lg text-justify">A:通常不会，请对比手机或者电脑企业微信现象以确定原因。</p>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:黑白图标不能点击？</h5>
+                    <p class="pt-3 lh-lg text-justify">A:功能位于小程序内，腾讯政策限制非小程序开发者不能直接网页跳转小程序，请在微信内长按识别图标二维码访问。</p>
+
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Qz:此页面的适用范围？</h5>
+                    <p class="pt-3 lh-lg text-justify">Az:手机电脑平板均可，微信内置浏览器在内的一切现代浏览器。</p>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Qe:功能缺失或者其他问题？</h5>
+                    <p class="pt-3 lh-lg text-justify">Ae:如有功能缺失，请点这里<kbd>
+                        <a href='mailto:mwtjc@qq.com?body="请准确描述问题所在。"&subject=掌上大厅精简版反馈'>点此通过Email反馈问题</a>
+                    </kbd>或者<kbd>
+                        <a href="#joinus">加入qq群</a>
+                    </kbd>对问题进行反馈，另外由于gitee静态页面缓存机制，功能添加后需要额外24小时才能显示出来，电脑端可以通过<kbd>Ctrl</kbd>+<kbd>F5</kbd>来强制刷新功能列表。
+                    <p class="pt-3 lh-lg text-justify"><kbd>公共服务</kbd>下的<kbd>消息中心</kbd>与<kbd>协作服务</kbd>下的<kbd>会议室</kbd>功能属企业微信内置功能，目前没找到对应的功能入口。
+                        另外本页面的功能列表是依据本科生工作台来制作，研究生特有功能…等我变成研究生再说（懒</p>
+
+
+                    <!--p class="pt-3 lh-lg">使用一般微信扫码访问以避免功能不完整</p-->
+                </div>
             </div>
-            <div class="col-md-9 col-lg-9 text-center text-md-start offset-lg-1 offset-xxl-0">
-              <h1 class="fw-semi-bold text-warning">疑难 <span class="text-1100">解答</span></h1>
-
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:浏览器核酸抽检不能扫码？</h5>
-              <p class="pt-3 lh-lg text-justify">A:通过微信访问核酸抽检。</p>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:<kbd>微信jsdk初始化失败</kbd>或者<kbd>暂无权限访问此服务</kbd>或者<kbd>请求错误
-                401：用户没有权限</kbd></h5>
-              <p class="pt-3 lh-lg text-justify">A:右上角刷新或者通过紫色钥匙登陆入口先登陆，无效请换浏览器。</p>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:<kbd>找不到此ids.cqupt.edu.cn页面</kbd>或者<kbd>HTTP ERROR
-                404</kbd></h5>
-              <p class="pt-3 lh-lg text-justify">
-                A:用紫色钥匙登陆入口先登陆再使用，无效则换浏览器或使用二维码访问。（此种情况也可能是学校服务器鬼搞，请对比手机或者电脑企业微信现象以确定原因）</p>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:<kbd>禁止访问403</kbd></h5>
-              <p class="pt-3 lh-lg text-justify">
-                A:学校鬼搞不让进，可能是需要内网VPN或者其他原因，请对比手机或者电脑企业微信现象以确定原因。</p>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:紫色钥匙登陆入口不能用？</h5>
-              <p class="pt-3 lh-lg text-justify">A:可能是学校服务器鬼搞。</p>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:不管用微信还是浏览器，都是一直卡着进不去或者卡在认证码登陆界面循环加载？</h5>
-              <p class="pt-3 lh-lg text-justify">A:那大概率是学校服务器鬼搞，请对比手机或者电脑企业微信现象以确定原因。</p>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:微信内置浏览器白屏打不开？</h5>
-              <p class="pt-3 lh-lg text-justify">A:长按功能图标通过二维码识别访问。</p>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:二维码识别访问也打不开？？</h5>
-              <p class="pt-3 lh-lg text-justify">A:通常不会，请对比手机或者电脑企业微信现象以确定原因。</p>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Q:黑白图标不能点击？</h5>
-              <p class="pt-3 lh-lg text-justify">A:功能位于小程序内，腾讯政策限制非小程序开发者不能直接网页跳转小程序，请在微信内长按识别图标二维码访问。</p>
-
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Qz:此页面的适用范围？</h5>
-              <p class="pt-3 lh-lg text-justify">Az:手机电脑平板均可，微信内置浏览器在内的一切现代浏览器。</p>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Qe:功能缺失或者其他问题？</h5>
-              <p class="pt-3 lh-lg text-justify">Ae:如有功能缺失，请点这里<kbd>
-                <a href='mailto:mwtjc@qq.com?body="请准确描述问题所在。"&subject=掌上大厅精简版反馈'>点此通过Email反馈问题</a>
-              </kbd>或者<kbd>
-                <a href="#joinus">加入qq群</a>
-              </kbd>对问题进行反馈，另外由于gitee静态页面缓存机制，功能添加后需要额外24小时才能显示出来，电脑端可以通过<kbd>Ctrl</kbd>+<kbd>F5</kbd>来强制刷新功能列表。
-              <p class="pt-3 lh-lg text-justify"><kbd>公共服务</kbd>下的<kbd>消息中心</kbd>与<kbd>协作服务</kbd>下的<kbd>会议室</kbd>功能属企业微信内置功能，目前没找到对应的功能入口。
-                另外本页面的功能列表是依据本科生工作台来制作，研究生特有功能…等我变成研究生再说（懒</p>
-
-
-              <!--p class="pt-3 lh-lg">使用一般微信扫码访问以避免功能不完整</p-->
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
 
-      <section id="unsolvable">
+    <section id="unsolvable">
         <div class="bg-holder"
              style="background-image:url(static/image/cta-bg.png);background-position:right bottom;background-size:contain;"></div>
         <!--/.bg-holder-->
         <div class="container">
-          <div class="row g-xl-0 align-items-center">
-            <div class="col-md-3 col-lg-2 text-center">
+            <div class="row g-xl-0 align-items-center">
+                <div class="col-md-3 col-lg-2 text-center">
 
-              <img class="img-fluid mb-5 mb-md-0" src="static/picture/sorry.png" width="150" alt="">
+                    <img class="img-fluid mb-5 mb-md-0" src="static/picture/sorry.png" width="150" alt="">
 
+                </div>
+                <div class="col-md-9 col-lg-9 text-center text-md-start offset-lg-1 offset-xxl-0">
+                    <h1 class="fw-semi-bold text-warning"><span class="text-1100">目前</span>无解<span
+                            class="text-1100">的部分</span></h1>
+
+                    <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Z:用企业微信创建的腾讯表格</h5>
+                    <p class="pt-3 lh-lg text-justify">
+                        Info:用企业微信创建的腾讯表格，限制在于腾讯表格需要企业微信账户登陆，只要用企业微信账户登陆，不管是手机电脑浏览器，都能用。如没有企业微信账户，则无论如何都不能。</p>
+
+                </div>
             </div>
-            <div class="col-md-9 col-lg-9 text-center text-md-start offset-lg-1 offset-xxl-0">
-              <h1 class="fw-semi-bold text-warning"><span class="text-1100">目前</span>无解<span
-                      class="text-1100">的部分</span></h1>
-
-              <h5 class="fw-semi-bold pt-3 lh-lg text-justify">Z:用企业微信创建的腾讯表格</h5>
-              <p class="pt-3 lh-lg text-justify">
-                Info:用企业微信创建的腾讯表格，限制在于腾讯表格需要企业微信账户登陆，只要用企业微信账户登陆，不管是手机电脑浏览器，都能用。如没有企业微信账户，则无论如何都不能。</p>
-
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
 
 
-      <!-- ============================================-->
-      <!-- <section> begin ============================-->
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
 
-      <!-- ============================================-->
+    <!-- ============================================-->
 
-      <section id="joinus">
+    <section id="joinus">
         <div class="bg-holder"
              style="background-image:url(static/image/cta-bg.png);background-position:right bottom;background-size:contain;"></div>
         <!--/.bg-holder-->
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-5 col-lg-7 order-md-1 text-end"><img class="img-fluid mb-4 mb-md-0"
-                                                                    src="static/picture/joinus.png" width="670" alt="">
+            <div class="row align-items-center">
+                <div class="col-md-5 col-lg-7 order-md-1 text-end"><img class="img-fluid mb-4 mb-md-0"
+                                                                        src="static/picture/joinus.png" width="670"
+                                                                        alt="">
+                </div>
+                <div class="col-md-7 col-lg-5 text-center text-md-start">
+                    <h1 class="fw-semi-bold text-warning lh-base">加入 <span class="text-1100">我们 <br>QQ加群扫码</span></h1>
+                    <p class="my-4 lh-lg"> 重庆邮电大学数码协会</p>
+                </div>
             </div>
-            <div class="col-md-7 col-lg-5 text-center text-md-start">
-              <h1 class="fw-semi-bold text-warning lh-base">加入 <span class="text-1100">我们 <br>QQ加群扫码</span></h1>
-              <p class="my-4 lh-lg"> 重庆邮电大学数码协会</p>
-              </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <section class="py-0">
+    <section class="py-0">
         <div class="bg-holder" style="background-image:url(#;"></div>
         <!--/.bg-holder-->
         <div class="container">
-          <div class="row justify-content-between pb-4 pt-5">
-            <div class="col-12 col-lg-auto mb-5 mb-lg-0"><a class="d-flex align-items-center fw-semi-bold fs-3"
-                                                            href="#"> <img class="me-3" src="static/picture/logo.png"
-                                                                           alt="">
-              <div class="text-primary font-base">掌上大厅精简版 Anti-WWX Prj.</div>
-            </a>
+            <div class="row justify-content-between pb-4 pt-5">
+                <div class="col-12 col-lg-auto mb-5 mb-lg-0"><a class="d-flex align-items-center fw-semi-bold fs-3"
+                                                                href="#"> <img class="me-3"
+                                                                               src="static/picture/logo.png"
+                                                                               alt="">
+                    <div class="text-primary font-base">掌上大厅精简版 Anti-WWX Prj.</div>
+                </a>
+                </div>
             </div>
-          </div>
         </div>
 
-      </section>
-
-      <!-- ===============================================-->
-      <!--    SAKANA!!!!-->
-      <!-- ===============================================-->
-      <div id="sakana-widget-chisato"></div>
-
-
-    </main>
-    <!-- ===============================================-->
-    <!--    End of Main Content-->
-    <!-- ===============================================-->
-
+    </section>
 
     <!-- ===============================================-->
     <!--    SAKANA!!!!-->
     <!-- ===============================================-->
-    <script>window.addEventListener('DOMContentLoaded', () => {
-      new SakanaWidget({}).mount('#sakana-widget-chisato');
-      new SakanaWidget({
+    <div id="sakana-widget-chisato"></div>
+
+
+</main>
+<!-- ===============================================-->
+<!--    End of Main Content-->
+<!-- ===============================================-->
+
+
+<!-- ===============================================-->
+<!--    SAKANA!!!!-->
+<!-- ===============================================-->
+<script>window.addEventListener('DOMContentLoaded', () => {
+    new SakanaWidget({}).mount('#sakana-widget-chisato');
+    new SakanaWidget({
         character: 'takina',
-      }).mount('#sakana-widget-takina');
-    });</script>
+    }).mount('#sakana-widget-takina');
+});</script>
 
 
-    <!-- ===============================================-->
-    <!--    JavaScripts-->
-    <!-- ===============================================-->
-    <script src="static/js/popper.min.js"></script>
-    <script src="static/js/bootstrap.min.js"></script>
-    <script src="static/js/is.min.js"></script>
-    <script src="static/js/polyfill.min.js"></script>
-    <script src="static/js/theme.js"></script>
-    <link href="static/css/css2.css" rel="stylesheet">
+<!-- ===============================================-->
+<!--    JavaScripts-->
+<!-- ===============================================-->
+<script src="static/js/popper.min.js"></script>
+<script src="static/js/bootstrap.min.js"></script>
+<script src="static/js/is.min.js"></script>
+<script src="static/js/polyfill.min.js"></script>
+<script src="static/js/theme.js"></script>
+<link href="static/css/css2.css" rel="stylesheet">
 </body>
 
 </html>
