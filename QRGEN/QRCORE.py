@@ -8,6 +8,7 @@ import colorsys
 import math
 import os
 import sys
+from pathlib import Path
 
 import PIL.ImageShow
 import qrcode
@@ -267,9 +268,14 @@ class GenerateQRCode(object):
 
         # 保存图片
 
-        save_file = f'export//{self.background_map}'
-        final.save(save_file, quality=100)
-        image.save(f'export//{self.background_map}_qr.png', quality=100)
+        save_file = f'{self.background_map}'
+        path_str = Path(save_file)
+        path_parent_path = path_str.parent
+        path_file_name = path_str.stem
+        # 输出结果图
+        final.save(f'{path_parent_path}/web/{path_file_name}.png', quality=100)
+        # 输出独立二维码图
+        image.save(f'{path_parent_path}/qr/{path_file_name}_qr.png', quality=100)
 
 
 def single(img_org_path, text):
