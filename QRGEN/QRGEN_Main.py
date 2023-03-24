@@ -33,6 +33,7 @@ if __name__ == "__main__":
     single('../static/picture/bx@disabled.png', 'https://mp.weixin.qq.com/a/9yp_ZtPEZY8brZcF93-l?v=2')
     single('../static/picture/fxxcb@disabled.png', 'https://mp.weixin.qq.com/a/9yp_ZtPEZY8brZcF93-l?v=2')
     single('../static/picture/sdf@disabled.png', 'https://mp.weixin.qq.com/a/9yp_ZtPEZY8brZcF93-l?v=2')
+    single('../static/picture/xxzx@disabled.png', 'https://mp.weixin.qq.com/a/9yp_ZtPEZY8brZcF93-l?v=2')
     single("../static/picture/xxdk.png", "http://szyx.cqupt.edu.cn/xxdk")
     single('../static/picture/pe_old.png', 'http://202.202.43.198/mobile/index')
     single('../static/picture/pe_new.png', 'http://172.20.2.228/portal')

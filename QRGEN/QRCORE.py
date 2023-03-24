@@ -194,20 +194,34 @@ class GenerateQRCode(object):
         dominant_color = 0, 0, 0
 
         # 取得主要颜色
-        for count, (r, g, b, a) in b_map.getcolors(b_map.size[0] * b_map.size[1]):
-            # 跳过纯黑色
-            if a == 0:
-                continue
-            saturation = colorsys.rgb_to_hsv(r / 255.0, g / 255.0, b / 255.0)[1]
-            y = min(abs(r * 2104 + g * 4130 + b * 802 + 4096 + 131072) >> 13, 235)
-            y = (y - 16.0) / (235 - 16)
-            # 忽略高亮色
-            if y > 0.9:
-                continue
-            score = (saturation + 0.1) * count
-            if score > max_score:
-                max_score = score
-                dominant_color = (r, g, b)
+        try:
+            for count, (r, g, b, a) in b_map.getcolors(b_map.size[0] * b_map.size[1]):
+                # 跳过纯黑色
+                if a == 0:
+                    continue
+                saturation = colorsys.rgb_to_hsv(r / 255.0, g / 255.0, b / 255.0)[1]
+                y = min(abs(r * 2104 + g * 4130 + b * 802 + 4096 + 131072) >> 13, 235)
+                y = (y - 16.0) / (235 - 16)
+                # 忽略高亮色
+                if y > 0.9:
+                    continue
+                score = (saturation + 0.1) * count
+                if score > max_score:
+                    max_score = score
+                    dominant_color = (r, g, b)
+        except ValueError:
+            for count, (r, g, b) in b_map.getcolors(b_map.size[0] * b_map.size[1]):
+                saturation = colorsys.rgb_to_hsv(r / 255.0, g / 255.0, b / 255.0)[1]
+                y = min(abs(r * 2104 + g * 4130 + b * 802 + 4096 + 131072) >> 13, 235)
+                y = (y - 16.0) / (235 - 16)
+                # 忽略高亮色
+                if y > 0.9:
+                    continue
+                score = (saturation + 0.1) * count
+                if score > max_score:
+                    max_score = score
+                    dominant_color = (r, g, b)
+
         print(dominant_color)
 
         # 此处添加通过s判断是否颜色过于深，如过深则整成灰色，防止被整成深红色
@@ -216,7 +230,7 @@ class GenerateQRCode(object):
             s = 0
         else:
             s = 1  # 饱和度拉满
-        v = 0.35  # 明度固定防止过暗过亮
+        v = 0.32  # 明度固定防止过暗过亮
         r, g, b = hsv2rgb(h, s, v)
 
         dark = (r, g, b, 255)
@@ -254,7 +268,7 @@ class GenerateQRCode(object):
 
         r, g, b, a = image.split()
 
-        opacity = 0.75
+        opacity = 0.95
         alpha = ImageEnhance.Brightness(a).enhance(opacity)
         image.putalpha(alpha)
 
