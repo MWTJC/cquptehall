@@ -230,7 +230,14 @@ class GenerateQRCode(object):
             s = 0
         else:
             s = 1  # 饱和度拉满
-        v = 0.32  # 明度固定防止过暗过亮
+
+        # v = 0.32  # 明度固定防止过暗过亮
+        # 加入亮度控制，v等于原本颜色减去0.2,v恒大于0.1且小于0.4
+        v = v - 0.25
+        if v <= 0.1:
+            v = 0.1
+        if v >= 0.4:
+            v = 0.4
         r, g, b = hsv2rgb(h, s, v)
 
         dark = (r, g, b, 255)
