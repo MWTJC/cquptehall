@@ -115,13 +115,10 @@
             <canvas id="SMALLcanvas3d" height="500"></canvas>
             <script type="module">
                 import {Application} from './static/spline/runtime.js';
-
                 const canvas = document.getElementById('SMALLcanvas3d');
                 const app = new Application(canvas);
-                <!-- 二选一 -->
                 const arrStr = ['./static/spline/smallscene.splinecode', './static/spline/smallscene2.splinecode'];
                 const randElement = arrStr[Math.floor(Math.random() * arrStr.length)];
-
                 app.load(randElement);
             </script>
         </div>
