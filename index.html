@@ -118,7 +118,11 @@
 
                 const canvas = document.getElementById('SMALLcanvas3d');
                 const app = new Application(canvas);
-                app.load('./static/spline/smallscene.splinecode');
+                <!--此处加入二选一随机-->
+                const arrStr = ['./static/spline/smallscene.splinecode', './static/spline/smallscene2.splinecode'];
+                const randElement = arrStr[Math.floor(Math.random() * arrStr.length)];
+
+                app.load(randElement);
             </script>
         </div>
 
